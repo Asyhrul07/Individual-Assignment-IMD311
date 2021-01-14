@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyhrul Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">ASYHRUL</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Biodata.html" class="navbar__links">Biodata</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Experience.html" class="navbar__links">Experience</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Education.html" class="navbar__links">Education</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Family.html" class="navbar__links">Family</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Gallery.html" class="navbar__links">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .bg-image1 {
+          background-image: url("images/ex2.jpg");
+          
+          filter: blur(8px);
+          -webkit-filter: blur(8px);
+          
+          height: 100%; 
+          
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        .bg-text {
+          background-color: rgb(0,0,0); 
+          background-color: rgba(0,0,0, 0.4); 
+          color: white;
+          font-weight: bold;
+          border: 3px solid #f1f1f1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 80%;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .inner-footer {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            height: 12vh;
+        }
+
+        .social-links {
+            display: flex;
+        }
+
+        .social-links ul {
+            padding: 10px;
+            display: flex;
+            width: 300px;
+            height: 30px;
+            margin: auto;
+        }
+
+        .social-items {
+            list-style: none;
+        }
+
+        .social-items a {
+            padding: 10px 20px;
+            font-size: 35px;
+            color: #6cccc6;
+        }
+    </style>
+    <div class="bg-image1"></div>
+
+        <div class="bg-text">
+          <h2>My Experience</h2>
+          <h1 style="font-size:30px">Be A Barber At</h1>
+          <p>BUNKS08 BARBERSHOP</p>
+        </div>
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>BUNK508</h1>
+                <h2>BARBERSHOP</h2>
+                <p>While some customers want a simple trim, others desire a detailed design or logo. The barber profession allows you to be creative and test your skills. If you do extensive amount of design work on people’s heads, ask them if you can take a picture for your portfolio. Having a barber portfolio can help expand your options and help you gain more clients</p>
+                <p>The barber profession is one that provides personal growth and career opportunities. While a barber may work in a barber shop, she can still put together a portfolio and use her creative skills for fashion shows, motion pictures and music videos, if her work is excellent</p>
+                <p>If a barber does not enjoy working in a shop with other barbers, she can start her own barber business. While it is hard work and can take time, it is a rewarding option to control hours, choose your clients and perform work you enjoy. Starting a barber business requires time-management skills and marketing and communication skills</p>
+            </div>
+            <div class="main__img--container">
+                <img src="images/ex1.jpeg" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+                <ul>
+                    <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fas fa-envelope-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

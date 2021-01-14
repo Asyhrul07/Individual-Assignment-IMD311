@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyhrul Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">ASYHRUL</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Biodata.html" class="navbar__links">Biodata</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Experience.html" class="navbar__links">Experience</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Education.html" class="navbar__links">Education</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Family.html" class="navbar__links">Family</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Gallery.html" class="navbar__links">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+    <style>
+        body {
+          font-family: Arial;
+          margin: 0;
+          background-color: rgb(110, 104, 104);
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        img {
+          vertical-align: middle;
+          height: 100%;
+          width: 100%;
+        }
+
+        .container {
+          position: relative;
+        }
+
+        .mySlides {
+          display: none;
+        }
+
+        .cursor {
+          cursor: pointer;
+        }
+
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        </style>
+        <body>
+        
+        <h2 style="text-align:center">My Family</h2>
+        
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="f1.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="f2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="f3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="f4.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="f5.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="f6.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="f1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Being a family means you are a part of something very wonderful. It means you will love and be loved for the rest of your life.">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="f2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Being a family means you are a part of something very wonderful. It means you will love and be loved for the rest of your life.">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="f3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Being a family means you are a part of something very wonderful. It means you will love and be loved for the rest of your life.">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="f4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Being a family means you are a part of something very wonderful. It means you will love and be loved for the rest of your life.">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="f5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Being a family means you are a part of something very wonderful. It means you will love and be loved for the rest of your life.">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="f6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Being a family means you are a part of something very wonderful. It means you will love and be loved for the rest of your life.">
+            </div>
+          </div>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+<style>
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: darkorange;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #696767;
+  }
+  </style>
+  <body>
+  
+  <h2>My Family Name</h2>
+  
+  <table>
+    <tr>
+      <th>Full Name</th>
+      <th>NickName</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Samsul Bahar</td>
+      <td>Ayah</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Faridah</td>
+      <td>Emak</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Noor Laili</td>
+      <td>Along</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Nur Atikah</td>
+      <td>Angah</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Nur Habibah</td>
+      <td>Kak Uda</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Asyhrul</td>
+      <td>Abang</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Nur Hasanah</td>
+      <td>Adik</td>
+      <td>17</td>
+    </tr>
+  </table>
+</body>
+</html>

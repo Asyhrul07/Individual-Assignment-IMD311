@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyhrul Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">ASYHRUL</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Biodata.html" class="navbar__links">Biodata</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Experience.html" class="navbar__links">Experience</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Education.html" class="navbar__links">Education</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Family.html" class="navbar__links">Family</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/Gallery.html" class="navbar__links">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+          background-color: black;
+        }
+
+        .header h1 {
+            color: rgb(255, 222, 160);
+        }
+
+        .header p {
+            color: rgb(74, 228, 189);
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+          background-color: black;
+        }
+        
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+          .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
+        <body>
+
+        <div class="header">
+          <h1>My Gallery</h1>
+          <p>Happy times come and go, but the memories stay forever.</p>
+        </div>
+
+        <div class="row"> 
+          <div class="column">
+            <img src="images/g1.jpg" style="width:100%">
+            <img src="images/g2.jpg" style="width:100%">
+            <img src="images/g3.jpg" style="width:100%">
+            <img src="images/pic1.jpg" style="width:100%">
+            <img src="images/pic2.jpg" style="width:100%">
+            <img src="images/pic3.jpg" style="width:100%">
+            <img src="images/pic4.jpeg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="f1.jpg" style="width:100%">
+            <img src="f2.jpg" style="width:100%">
+            <img src="f3.jpg" style="width:100%">
+            <img src="f4.jpg" style="width:100%">
+            <img src="f5.jpg" style="width:100%">
+            <img src="f6.jpg" style="width:100%">
+            <img src="pic5.jpg" style="width:100%">
+          </div>  
+          <div class="column">
+            <img src="images/g4.jpg" style="width:100%">
+            <img src="images/g5.jpg" style="width:100%">
+            <img src="images/g6.jpg" style="width:100%">
+            <img src="images/g7.jpg" style="width:100%">
+            <img src="images/g8.jpg" style="width:100%">
+            <img src="images/g9.jpg" style="width:100%">
+            <img src="images/g16.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="images/g10.jpg" style="width:100%">
+            <img src="images/g11.jpg" style="width:100%">
+            <img src="images/g12.jpg" style="width:100%">
+            <img src="images/g13.jpg" style="width:100%">
+            <img src="images/g14.jpg" style="width:100%">
+            <img src="images/g15.jpg" style="width:100%">
+            <img src="images/g17.jpg" style="width:100%">
+            <img src="images/g18.jpg" style="width:100%">
+          </div>
+        </div>
+</body>
+</html>
